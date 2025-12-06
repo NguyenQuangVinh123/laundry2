@@ -49,7 +49,7 @@ export async function GET(request: Request) {
         amount: true,
       },
       where: {
-        customerId: 427,
+        customerId: 36,
         dateCreated: {
           gte: startOfMonth,
           lte: endOfMonth,
@@ -60,7 +60,7 @@ export async function GET(request: Request) {
     // Get detailed bills for customer 427 in current month
     const customer427Bills = await prisma.bill.findMany({
       where: {
-        customerId: 427,
+        customerId: 36,
         dateCreated: {
           gte: startOfMonth,
           lte: endOfMonth,
@@ -77,7 +77,7 @@ export async function GET(request: Request) {
         amount: true,
       },
       where: {
-        customerId: 427,
+        customerId: 36,
         dateCreated: {
           gte: startOfPrevMonth,
           lte: endOfPrevMonth,
